@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* reduced from 40px to bring everything up */
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    width: 400px; /* Increased to make layout less cramped */
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns emoji + text to the left */
+    gap: 10px;
+    margin-bottom: 20px; /* Less space below heading */
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .input-text {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* more gap between input and button */
+    margin-bottom: 20px;
+  }
+  /* Think of .input-text like a tray holding a cup and a plate.
+Then #todo-input is like styling just the cup — its color, size, etc.
+Each has its own purpose: layout vs. specific element styling.
+You want input and button side by side (use .input-text)
+You want to style just the input box (use #todo-input) */
+  #todo-input {
+    padding: 10px;
+    font-size: 14px;
+    width: 60%;
+  }
+  
+  #add-btn {
+    padding: 10px 15px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #add-btn:hover {
+    background-color:darkorange;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds depth */
+  }
+    #task-list li {
+        padding: 2px;
+        background-color: #eee;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        list-style-type: none;
+      }
+      /* .delete-btn {
+        width: 20px;
+        margin-left: 10px;
+        gap: 30px;
+        cursor: pointer;
+      } */
+      
+      .task-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .delete {
+        width: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      
+      .delete {
+        width: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      
+     
